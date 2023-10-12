@@ -1,6 +1,6 @@
 variable "instance_type" {
    type = string
-   description = "EC2 Instance Type"
+   description = "t2.micro"
 }
 
 # No default value
@@ -15,3 +15,11 @@ variable "location" {
    description = "The project region"
    default = "us-east-1"
 }
+
+# default value for the keypair used
+variable "keyname" {
+   type = string
+   description = "The kaypair"
+   default ="vprofile-key"
+}
+
